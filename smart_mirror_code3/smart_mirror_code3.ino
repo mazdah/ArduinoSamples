@@ -88,7 +88,7 @@ void loop()
     Tft.lcd_clear_partscreen(BLACK, 35 + 16 * 4, 100, 16*2, 90);
   }
 
-  if (gHour == 0 || gHour != hour || minute == 0) {
+  if (gHour != hour || minute == 0) {
     gHour = hour;
     Tft.lcd_clear_partscreen(BLACK, 0, 100, 16*6, 90);
   }
@@ -124,7 +124,6 @@ void loop()
 //  
 //  Tft.lcd_clear_partscreen(BLACK, 35 + 16 * 7, 100, 16*2, 90);
 }
-
 
 
 
